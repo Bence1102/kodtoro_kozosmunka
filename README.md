@@ -1,1 +1,2 @@
-https://etananyag.szamalk-szalezi.hu/pluginfile.php/48978/mod_assign/introattachment/0/kodtoro.drawio?forcedownload=1
+
+![kodtoro (1)](https://github.com/user-attachments/assets/7fdfac4e-f972-4c75-80df-d5965298724c)
