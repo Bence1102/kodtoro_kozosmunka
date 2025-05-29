@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+}
+.generalt, .sor{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+.jatekter{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    border: 2px solid gray;
+}
+.visszajelzes{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2px;
+}
+.vElem, .Elem{
+    aspect-ratio: 1;
+}
+.szinvalaszto{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    gap: 3px;
+    cursor: grab;
+}
+.szin{
+    aspect-ratio: 1;
+    border: 1px solid lightgray;
+    cursor: grab;
+    gap: 2px;
+}
+.szin:nth-child(){
+    background-color: red;
+}
+.szin:nth-child(){
+    background-color: green;
+}
+.szin:nth-child(){
+    background-color: orange;
+}
+.szin:nth-child(){
+    background-color: yellow;
+}
+.szin:nth-child(){
+    background-color: blue;
+}
+.szin:nth-child(){
+    background-color: purple;
+}
