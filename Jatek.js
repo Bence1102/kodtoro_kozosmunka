@@ -21,8 +21,12 @@ export default class Jatek {
         this.#init();
     }
     megjelenit(){
-        const generalt = new Generalt(this.#generaltLista);
-        this.#jatekter.innerHTML = generalt.megjelenit();
+        console.log("Játék megjelenítése");
+        console.log(this.#visszajelzesListaM[0]);
+        console.log(this.#tippLista[0]);
+        for (let i = 0; i < 10; i++) {
+           new JatekSor(this.#visszajelzesListaM[i], this.#tippLista[i], this.#jatekter);
+        }
     }
 
 
