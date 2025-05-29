@@ -1,27 +1,19 @@
-import {visszajelzesLista} from "./listak.js";
 export default class Visszajelzes {
-
-    #visszajeltesLista = [];
+    #visszajelzesLista = [];
     #szElem;
-
-    constructor(visszajelzesLista) {
-        this.#visszajeltesLista = visszajelzesLista;
-        this.#szElem = document.querySelector("#visszajelzes");
+    constructor(visszajelzesLista, szElem) {
+        this.#visszajelzesLista = visszajelzesLista;
+        this.#szElem = szElem;
+        this.#megjelenit();
     }
+    #megjelenit() {
+            let html = `</div><div class="visszajelzes">
+                          <div class="vElem" style="background-color:${this.#visszajelzesLista[0]}"}></div>
+                          <div class="vElem" style="background-color:${this.#visszajelzesLista[1]}"}></div>
+                          <div class="vElem" style="background-color:${this.#visszajelzesLista[2]}"}></div>
+                          <div class="vElem" style="background-color:${this.#visszajelzesLista[3]}"}></div>
+                        </div>`;
 
-    getVisszajelzes(sor, oszlop) {
-        return this.#visszajeltesLista [sor][oszlop];
-    }
-
-    setVisszajelzes(sor, oszlop, szin) {
-        this.#visszajeltesLista [sor][oszlop] = szin;
-    }
-
-    resetVisszajelzes() {
-        for (let i = 0; i < this.#visszajeltesLista .length; i++) {
-            for (let j = 0; j < this.#visszajeltesLista [i].length; j++) {
-                this.#visszajeltesLista [i][j] = "gray";
-            }
+            this.#szElem.insertAdjacentHTML("beforeend", html);
         }
     }
-}

@@ -1,6 +1,6 @@
 export const szinLista = ["red", "green", "blue", "yellow", "purple", "orange"];
 export const generaltLista = ["white", "white", "white", "white"];
-export const visszajelzesLista = [
+export const visszajelzesListaM = [
     ["gray", "gray", "gray", "gray"],
     ["gray", "gray", "gray", "gray"],
     ["gray", "gray", "gray", "gray"],
@@ -12,7 +12,7 @@ export const visszajelzesLista = [
     ["gray", "gray", "gray", "gray"],
     ["gray", "gray", "gray", "gray"]
 ];
-export const tippLista = [
+export const tippListaM = [
     ["white", "white", "white", "white"],
     ["white", "white", "white", "white"],
     ["white", "white", "white", "white"],
