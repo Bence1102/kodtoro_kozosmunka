@@ -8,7 +8,7 @@ export default class Visszajelzes {
     }
     #megjelenit() {
             let html = `</div><div class="visszajelzes">
-                          <div class="vElem" style="background-color:${this.#visszajelzesLista[0]}"}></div>
+                          <div class="vElem" ="background-color:${this.#visszajelzesLista[0]}"}></div>
                           <div class="vElem" style="background-color:${this.#visszajelzesLista[1]}"}></div>
                           <div class="vElem" style="background-color:${this.#visszajelzesLista[2]}"}></div>
                           <div class="vElem" style="background-color:${this.#visszajelzesLista[3]}"}></div>
