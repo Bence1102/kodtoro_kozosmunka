@@ -11,15 +11,22 @@ export default class Tipp {
     }
 
     megjelenit() {
-        
-        this.#szElem.innerHTML = "";
+        const jateksorok = this.#szElem.querySelectorAll(".jateksor");
 
-        
-        this.#tippLista.forEach((tipp) => {
-            const tippElem = document.createElement("div");
-            tippElem.textContent = tipp; 
-            tippElem.classList.add("tipp-item");
-            this.#szElem.appendChild(tippElem); 
-        });
+    for (let i = 0; i < this.#tippLista.length; i++) {
+        const tippSor = this.#tippLista[i];  
+        const jateksorElem = jateksorok[i];
+        if (!jateksorElem) continue;
+        const sorElem = jateksorElem.querySelector(".sor");
+        if (!sorElem) continue;
+        const elemek = sorElem.querySelectorAll(".Elem");
+        for (let j = 0; j < tippSor.length; j++) {
+            const elem = elemek[j];
+            if (!elem) continue;
+            elem.style.backgroundColor = tippSor[j];
+        }
     }
+      }
+      
+    
 }
