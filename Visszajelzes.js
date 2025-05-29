@@ -1,7 +1,7 @@
 export default class Visszajelzes {
     #visszajelzesListaM = [];
     #szElem;
-    constructor(visszajelzesLista, szElem) {
+    constructor(visszajelzesListaM, szElem) {
         this.#visszajelzesListaM = visszajelzesListaM;
         this.#szElem = szElem;
         this.#megjelenit();
