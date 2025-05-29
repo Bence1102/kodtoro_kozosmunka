@@ -8,7 +8,7 @@ main{
     grid-template-columns: 1fr 1fr;
     gap: 2px;
 }
-.generalt, .sor{
+ .sor{
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -16,9 +16,16 @@ main{
 }
 .jatekter{
     padding: 10px;
+  
+    border: 2px solid gray;
+}
+
+.jateksor {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    border: 2px solid gray;
+    border: 2px solid lightgray; 
+    padding: 5px;
+    gap: 10px;
 }
 .visszajelzes{
     padding: 10px;
@@ -29,6 +36,7 @@ main{
 }
 .vElem, .Elem{
     aspect-ratio: 1;
+    border: 1px solid lightgray;
 }
 .szinvalaszto{
     display: grid;
