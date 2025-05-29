@@ -1,20 +1,20 @@
-import { szinekLista, generaltLista, tippLista, visszajelzesLista } from "./listak.js";
+import { szinLista, generaltLista,visszajelzesListaM,tippListaM } from "./listak.js";
 import Generalt from "./Generalt.js";
 
 export default class Jatek {
     #szinekLista;
     #generaltLista;
     #visszajelzesListaM;
-    #tippLista;
+    #tippListaM;
     #jatekter;
     #sor;
     #oszlop;
 
     constructor() {
-        this.#szinekLista = szinekLista;
+        this.#szinekLista = szinLista;
         this.#generaltLista = generaltLista;
-        this.#visszajelzesListaM = visszajelzesLista;
-        this.#tippLista = tippLista;
+        this.#visszajelzesListaM = visszajelzesListaM;
+        this.#tippListaM = tippListaM;
         this.#jatekter = document.querySelector(".jatekter");
         this.#sor = 0;
         this.#oszlop = 0;
@@ -23,9 +23,9 @@ export default class Jatek {
     megjelenit(){
         console.log("Játék megjelenítése");
         console.log(this.#visszajelzesListaM[0]);
-        console.log(this.#tippLista[0]);
+        console.log(this.#tippListaM[0]);
         for (let i = 0; i < 10; i++) {
-           new JatekSor(this.#visszajelzesListaM[i], this.#tippLista[i], this.#jatekter);
+           new JatekSor(this.#visszajelzesListaM[i], this.#tippListaM[i], this.#jatekter);
         }
     }
 

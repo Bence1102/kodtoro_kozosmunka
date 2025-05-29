@@ -1,4 +1,4 @@
-import { szinekLista } from "./listak.js";
+
 export default class Generalt{
     #generaltLista=[];
     #szElem;

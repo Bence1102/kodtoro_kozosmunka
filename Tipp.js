@@ -1,4 +1,4 @@
-import { tippLista } from "./listak.js";
+
 
 export default class Tipp {
 
