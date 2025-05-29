@@ -1,13 +1,16 @@
 import { generaltLista } from "./listak.js";
+
 export default class General {
   #generaltLista = [];
   #szElem;
   constructor(generaltLista) {
-    this.#szElem = szinElem;
+    // Inicializálás
     this.#generaltLista = generaltLista;
-    megjelenit();
+    this.#szElem = document.querySelector(".general"); 
+    this.megjelenit(); 
   }
-  megjelenit(){
+
+  megjelenit() {
     
   }
 }
