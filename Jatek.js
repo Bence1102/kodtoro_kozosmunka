@@ -1,4 +1,4 @@
-import { szinLista, generaltLista,visszajelzesListaM,tippListaM } from "./listak.js";
+import { szinLista, generaltLista, visszajelzesListaM, tippListaM } from "./listak.js";
 import Generalt from "./Generalt.js";
 import JatekSor from "./JatekSor.js";
 
@@ -23,49 +23,27 @@ export default class Jatek {
         this.generaltListaEloallit();
         this.megjelenit();
     }
-    megjelenit(){
+    megjelenit() {
         new Generalt(this.#generaltLista);
         for (let i = 0; i < 10; i++) {
-           new JatekSor(this.#visszajelzesListaM[i], this.#tippListaM[i], this.#jatekter);
+            new JatekSor(this.#visszajelzesListaM[i],
+                this.#tippListaM[i],
+                this.#jatekter
+            );
         }
     }
-
-
-    generaltListaEloallit(){
-
+    generaltListaEloallit() {
+        let szinLista = [...this.#szinLista];
+        szinLista = szinLista.sort(() => Math.random() - 0.5);
+        this.#generaltLista = szinLista.slice(0, 4);
+        console.log(this.#generaltLista);
     }
-
-
-    szin1Esemenykezelo(){
-
-    }
-
-    szin2Esemenykezelo(){
-        
-    }
-
-    szin3Esemenykezelo(){
-
-    }
-
-    szin4Esemenykezelo(){
-
-    }
-
-    szin5Esemenykezelo(){
-
-    }
-
-    szin6Esemenykezelo(){
-
-    }
-
-    #init(){
-
-
-    }
-
-    visszajelzes(){
-        
-    }
+    szin1Esemenykezelo() { }
+    szin2Esemenykezelo() { }
+    szin3Esemenykezelo() { }
+    szin4Esemenykezelo() { }
+    szin5Esemenykezelo() { }
+    szin6Esemenykezelo() { }
+    #init() { }
+    visszajelzes() { }
 }
